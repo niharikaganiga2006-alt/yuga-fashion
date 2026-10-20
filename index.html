@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>YUGA | Wear Your Era</title>
+
+<meta name="description" content="Discover YUGA, your destination for modern unisex streetwear and everyday fashion.">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+```
+
+</head>
+
+<body>
+
+```
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+    YOUR STYLE. YOUR ERA. WELCOME TO YUGA.
+</div>
+
+<!-- Header -->
+<header class="header">
+
+    <button class="menu-button" id="menuButton" aria-label="Open navigation menu">
+        ☰
+    </button>
+
+    <a href="#" class="logo">YUGA<span>.</span></a>
+
+    <nav class="navigation" id="navigation">
+        <a href="#home">Home</a>
+        <a href="#new-arrivals">New Arrivals</a>
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#about">Our Story</a>
+    </nav>
+
+    <div class="header-actions">
+        <button class="icon-button" id="searchButton" aria-label="Search products">⌕</button>
+        <button class="icon-button" id="wishlistButton" aria-label="Wishlist">♡</button>
+        <button class="icon-button cart-button" id="cartButton" aria-label="Shopping cart">
+            Bag <span id="cartCount">0</span>
+        </button>
+    </div>
+
+</header>
+
+<!-- Search Panel -->
+<div class="search-panel" id="searchPanel" hidden>
+    <input
+        type="search"
+        id="searchInput"
+        placeholder="Search your next favourite..."
+        aria-label="Search products"
+    >
+    <button id="closeSearch" aria-label="Close search">×</button>
+</div>
+
+<!-- Hero Section -->
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="eyebrow">INTRODUCING THE YUGA COLLECTION</p>
+
+            <h1>Wear Your<br><span>Era.</span></h1>
+
+            <p class="hero-description">
+                Everyday essentials. Effortless style.
+                Discover fashion that feels like you.
+            </p>
+
+            <a href="#new-arrivals" class="primary-button">
+                EXPLORE COLLECTION <span>↗</span>
+            </a>
+
+            <p class="hero-note">MADE FOR YOUR EVERYDAY.</p>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-image-placeholder">
+                <span>YUGA</span>
+                <p>YOUR CAMPAIGN IMAGE GOES HERE</p>
+            </div>
+
+            <div class="floating-label">
+                <span>01 / 26</span>
+                <span>THE EVERYDAY EDIT</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section class="categories section-padding">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">FIND YOUR FIT</p>
+                <h2>Made for <em>every you.</em></h2>
+            </div>
+
+            <p class="section-description">
+                Pieces that move with you, every day.
+            </p>
+        </div>
+
+        <div class="category-grid">
+
+            <a href="#men" class="category-card category-men">
+                <div class="category-image">
+                    <span>01</span>
+                </div>
+                <div class="category-caption">
+                    <div>
+                        <h3>For Him</h3>
+                        <p>Everyday streetwear</p>
+                    </div>
+                    <span class="category-arrow">↗</span>
+                </div>
+            </a>
+
+            <a href="#women" class="category-card category-women">
+                <div class="category-image">
+                    <span>02</span>
+                </div>
+                <div class="category-caption">
+                    <div>
+                        <h3>For Her</h3>
+                        <p>Effortless expression</p>
+                    </div>
+                    <span class="category-arrow">↗</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="products-section section-padding" id="new-arrivals">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">JUST LANDED</p>
+                <h2>The latest <em>drop.</em></h2>
+            </div>
+
+            <a href="#products" class="text-link">VIEW COLLECTION ↗</a>
+        </div>
+
+        <div class="product-toolbar">
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="men">Men</button>
+                <button class="filter-button" data-filter="women">Women</button>
+                <button class="filter-button" data-filter="unisex">Unisex</button>
+            </div>
+
+            <label class="sort-label">
+                Sort:
+                <select id="sortSelect">
+                    <option value="featured">Featured</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="product-grid" id="products">
+
+            <article class="product-card" data-category="unisex" data-price="899">
+                <div class="product-image product-image-one">
+                    <span class="product-badge">NEW DROP</span>
+                    <button class="wishlist-toggle" aria-label="Add Classic Tee to wishlist">♡</button>
+                    <button class="quick-add" data-name="Everyday Classic Tee" data-price="899">
+                        ADD TO BAG +
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3>Everyday Classic Tee</h3>
+                        <p>Relaxed fit · Unisex</p>
+                    </div>
+                    <span class="product-price">₹899</span>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="men" data-price="1499">
+                <div class="product-image product-image-two">
+                    <span class="product-badge">BESTSELLER</span>
+                    <button class="wishlist-toggle" aria-label="Add Street Oversized Tee to wishlist">♡</button>
+                    <button class="quick-add" data-name="Street Oversized Tee" data-price="1499">
+                        ADD TO BAG +
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3>Street Oversized Tee</h3>
+                        <p>Oversized fit · Men</p>
+                    </div>
+                    <span class="product-price">₹1,499</span>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="women" data-price="1299">
+                <div class="product-image product-image-three">
+                    <button class="wishlist-toggle" aria-label="Add Everyday Shirt to wishlist">♡</button>
+                    <button class="quick-add" data-name="Everyday Statement Shirt" data-price="1299">
+                        ADD TO BAG +
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3>Everyday Statement Shirt</h3>
+                        <p>Relaxed fit · Women</p>
+                    </div>
+                    <span class="product-price">₹1,299</span>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="unisex" data-price="1999">
+                <div class="product-image product-image-four">
+                    <span class="product-badge">YUGA ESSENTIAL</span>
+                    <button class="wishlist-toggle" aria-label="Add Essential Hoodie to wishlist">♡</button>
+                    <button class="quick-add" data-name="Essential Hoodie" data-price="1999">
+                        ADD TO BAG +
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h3>The Essential Hoodie</h3>
+                        <p>Relaxed fit · Unisex</p>
+                    </div>
+                    <span class="product-price">₹1,999</span>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="demo-notice">
+            These are sample products and prices for website development.
+            Replace them with your actual inventory before selling.
+        </p>
+
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story" id="about">
+        <div class="brand-story-content">
+            <p class="eyebrow">MORE THAN WHAT YOU WEAR</p>
+            <h2>Different days.<br><em>Different eras.</em><br>Always you.</h2>
+            <p>
+                YUGA is about expressing yourself without trying too hard.
+                Discover everyday pieces made to fit your style, your mood
+                and your moment.
+            </p>
+            <a href="#new-arrivals" class="primary-button">DISCOVER YUGA ↗</a>
+        </div>
+
+        <div class="brand-story-mark">Y.</div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-top">
+        <div>
+            <a href="#home" class="footer-logo">YUGA<span>.</span></a>
+            <p>Wear Your Era.</p>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h4>EXPLORE</h4>
+                <a href="#new-arrivals">New Arrivals</a>
+                <a href="#men">Men</a>
+                <a href="#women">Women</a>
+            </div>
+
+            <div>
+                <h4>HELP</h4>
+                <a href="#contact">Contact</a>
+                <a href="#shipping">Shipping & Returns</a>
+                <a href="#faq">FAQs</a>
+            </div>
+
+            <div>
+                <h4>FOLLOW YUGA</h4>
+                <a href="#instagram">Instagram</a>
+                <a href="#about">Our Story</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 YUGA. ALL RIGHTS RESERVED.</span>
+        <span>DESIGNED FOR EVERY ERA.</span>
+    </div>
+
+</footer>
+
+<!-- Cart Drawer -->
+<div class="drawer-overlay" id="drawerOverlay" hidden></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true" inert>
+    <div class="drawer-header">
+        <h2>Your Bag <span id="drawerCount">(0)</span></h2>
+        <button id="closeCart" aria-label="Close shopping bag">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+        <p class="empty-cart">Your bag is waiting for something good.</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>Subtotal</span>
+            <strong id="cartTotal">₹0</strong>
+        </div>
+        <p>Shipping and discounts are calculated at checkout.</p>
+        <button id="checkoutButton" class="primary-button checkout-button">
+            CONTINUE TO CHECKOUT
+        </button>
+    </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+```
+
+</body>
+</html>
